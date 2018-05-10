@@ -28,11 +28,11 @@ int main(int argc, char const *argv[]) {
             break;
             case 3:
             if(head) head = delete_front_node(head);
-            else printf("KOLEJKA PUSTA\n");
+            else printf("LISTA PUSTA\n");
             break;
             case 4:
             if(head) head = delete_end_node(head);
-            else printf("KOLEJKA PUSTA\n");
+            else printf("LISTA PUSTA\n");
             break;
             case 5:
             write_out(head);
