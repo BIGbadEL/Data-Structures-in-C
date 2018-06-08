@@ -41,7 +41,7 @@ int main(int argc, char const *argv[]) {
 
     } while(navigator);
 
-    if(!head) my_free(head);
+    my_free(head);
 
 
     return 0;

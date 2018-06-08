@@ -10,10 +10,12 @@ struct List_element* add_front_node(struct List_element *head, int new_value){
 }
 
 void my_free(struct List_element* head){
-    if(head->next){
-        my_free(head->next);
+    struct List_element *temp;
+    while(head != NULL){
+        temp = head;
+        head = head->next;
+        free(temp);
     }
-    free(head);
 }
 
 void add_end_node(struct List_element *head, int new_value){
